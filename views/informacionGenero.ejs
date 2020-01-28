@@ -1,0 +1,12 @@
+<%- include header -%>
+    <h1>
+        <%=genero.name%>
+    </h1>
+    <ul>
+        <%genero.peliculas.forEach((peliculas) => {%>
+            <li>
+                <%= peliculas.title%>
+            </li>
+            <% }) %>
+    </ul>
+    <%- include footer -%>
